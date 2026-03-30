@@ -1,0 +1,92 @@
+
+#page-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  z-index: 10001;
+}
+#page-nav .nav-inner {
+  max-width: 84rem;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#page-nav .brand {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2f3a45;
+  font-weight: 700;
+}
+#page-nav .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.25rem;
+}
+#page-nav a {
+  text-decoration: none;
+  border-bottom: 0;
+  color: #5c6570;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+body { padding-top: 4.25rem; }
+.banner .content .project-by { color: #6f7b86; font-size: 1rem; }
+.option-grid, .evidence-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+.option-grid { grid-template-columns: repeat(3, minmax(0,1fr)); margin-top: 2.25rem; }
+.evidence-grid { grid-template-columns: repeat(2, minmax(0,1fr)); margin-top: 2rem; }
+.option-card, .evidence-card {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0.45rem;
+  overflow: hidden;
+  background: #fff;
+  text-align: left;
+}
+.option-card img, .evidence-card img {
+  display:block; width:100%; height:auto;
+}
+.option-card .copy, .evidence-card .copy { padding: 1.25rem 1.35rem; }
+.option-card h3, .evidence-card h3 { margin-bottom: 0.4rem; }
+.badge {
+  display:inline-block;
+  margin-top:0.75rem;
+  padding:0.35rem 0.7rem;
+  background:#e7f2eb;
+  color:#3e6f59;
+  border-radius:999px;
+  font-size:0.75rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  font-weight:700;
+}
+.notice {
+  background:#f6f7f8;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:0.4rem;
+  padding:1rem 1.15rem;
+  color:#5d6671;
+}
+.table-wrapper table td, .table-wrapper table th { vertical-align: top; }
+.section-lead { max-width: 54rem; margin: 0 auto 0.5rem auto; }
+.source-list { text-align:left; display:inline-block; }
+@media screen and (max-width: 980px) {
+  .option-grid { grid-template-columns: 1fr; }
+  .evidence-grid { grid-template-columns: 1fr; }
+  #page-nav .nav-inner { align-items:flex-start; flex-direction:column; }
+  body { padding-top: 6.4rem; }
+}
+@media screen and (max-width: 736px) {
+  #page-nav .links { gap: 0.65rem 0.85rem; }
+  #page-nav a { font-size: 0.72rem; }
+}
